@@ -7,12 +7,25 @@ function heeHaw(number)
 
     for (let i = 1; i <= number; i++)
     {
-        console.log(i);
+        if (i % 3 === 0) {
+            if (i % 5 === 0) {
+                console.log("Hee Haw!");
+            }
+            else {
+                console.log("Hee!");
+            }
+        }
+        else if (i % 5 === 0) {
+            console.log("Haw!");
+        }
+        else {
+            console.log(i);
+        }
     }
 }
 
 heeHaw(true);
 heeHaw(NaN);
 heeHaw("Hello");
-heeHaw(5);
-heeHaw(6.8);
+heeHaw(25);
+heeHaw(81.4);

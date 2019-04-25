@@ -25,5 +25,4 @@ function arrayObject(array)
 }
 
 let obj = arrayObject([1, 3, true, false, "hello", "world"]);
-
-console.log(obj);
+document.body.innerHTML = "<p>" + JSON.stringify(obj) + "</p>";
